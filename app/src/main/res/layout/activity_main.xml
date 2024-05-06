@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/passwordId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordId"
+        android:layout_width="211dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password"
+        app:layout_constraintBottom_toTopOf="@+id/rememberId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/rememberId"
+        android:layout_width="184dp"
+        android:layout_height="38dp"
+        android:text="Remember me"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordId" />
+
+    <Button
+        android:id="@+id/RegisterId"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="264dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rememberId" />
+
+    <Button
+        android:id="@+id/loginId"
+        android:layout_width="129dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="286dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rememberId"
+        app:layout_constraintVertical_bias="0.31" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
